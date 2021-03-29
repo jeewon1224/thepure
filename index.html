@@ -7,11 +7,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>the Pure</title>
 </head>
 <body>
+  <script>
+    // AOS.init();
+    AOS.init({
+   once: true
+})
+  </script>
+
   <div id="wrapper">
     <header id="header">
       <div class="header_top">
@@ -22,17 +31,35 @@
           <li><a href="#">마이페이지</a></li>
         </ul>
       </div>
-      <div class="heaer_bottom">
+      <div class="header_bottom">
         <ul class="bottom_gnb">
           <h1 class="logo">
             <a href="#">
               <img src="img/logo.png" alt="더퓨어 로고">
             </a>
           </h1>
-          <nav id="main_nav">
-            <ul>
+          <nav id="nav">
+            <ul class="main_list">
               <li><a href="#">Brand</a></li>
-              <li><a href="#">Product</a></li>
+              <li>
+                <a href="#">Product</a>
+                <div class="sub_list">
+                  <div class="sub_wrapper">
+                    <ul>
+                      <p>피부타입별</p>
+                      <li><a href="#">Category One</a></li>
+                      <li><a href="#">Category Two</a></li>
+                      <li><a href="#">Category Three</a></li>
+                    </ul>
+                    <ul>
+                      <p>피부고민별</p>
+                      <li><a href="#">Category One</a></li>
+                      <li><a href="#">Category Two</a></li>
+                      <li><a href="#">Category Three</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
               <li><a href="#">Review</a></li>
               <li><a href="#">Event</a></li>
               <li><a href="#">CS Center</a></li>
@@ -44,7 +71,27 @@
     <!-- end of header -->
     
     <main id="main">
-      <section id="banner">
+      <section id="main_silde">
+        <div class="banner_slider">
+          <div class="img_box">
+            <div class="img img1">
+              <div class="banner_txt">
+                <p>베스트 상품 </p>
+              </div>
+            </div>
+            <div class="img img2"></div>
+            <div class="img img3"></div>
+            <div class="img img4"></div>
+            <div class="img img5"></div>
+          </div>
+          <!-- <div class="navi">
+            <button class="prev"><</button>
+            <button class="next">></button>
+          </div> -->
+          <div class="indicator"></div>
+        </div>
+
+
         <!-- <div class="banner_slider">
           <div class="slider_wrapper">
             <div class="banner banner1"></div>
@@ -54,9 +101,7 @@
             <div class="banner banner5"></div>
           </div>
         </div> -->
-
-
-        <div class="slide_wapper">
+        <!-- <div class="slide_wapper">
           <div class="slide_box">
             <div class="img_box img1"></div>
             <div class="img_box img2"></div>
@@ -64,23 +109,148 @@
             <div class="img_box img4"></div>
             <div class="img_box img5"></div>
           </div>
+        </div> -->
+      </section>
+      <section id="main_best" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+        <div class="wrap">
+          <h2 class="title">Best Items</h2>
+          <hr>
+          <div class="best_items">
+            <div class="best_item item1">
+              <a href="#" class="best_img"><img src="img/main_best_01.png" alt="메인 베스트 상품 이미지1"></a>
+              <div class="best_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="best_item item2">
+              <a href="#" class="best_img"><img src="img/main_best_02.png" alt="메인 베스트 상품 이미지1"></a>
+              <div class="best_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="best_item item3">
+              <a href="#" class="best_img"><img src="img/main_best_03.png" alt="메인 베스트 상품 이미지1"></a>
+              <div class="best_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="best_item item4">
+              <a href="#" class="best_img"><img src="img/main_best_01.png" alt="메인 베스트 상품 이미지1"></a>
+              <div class="best_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of main best wrap -->
+      </section>
+
+      <section id="main_today" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+        <div class="wrap">
+          <h2 class="title">Today's Choice</h2>
+          <hr>
+          <div class="today_items">
+            <div class="today_item item1">
+              <a href="#" class="today_img"><img src="img/ex.jpg" alt="오늘의 추천 상품 이미지1"></a>
+              <div class="today_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="today_item item2">
+              <a href="#" class="today_img"><img src="img/ex.jpg" alt="오늘의 추천 상품 이미지1"></a>
+              <div class="today_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="today_item item3">
+              <a href="#" class="today_img"><img src="img/ex.jpg" alt="오늘의 추천 상품 이미지1"></a>
+              <div class="today_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+            <div class="today_item item4">
+              <a href="#" class="today_img"><img src="img/ex.jpg" alt="오늘의 추천 상품 이미지1"></a>
+              <div class="today_desc">
+                <h3><a href="#">Product Name</a></h3>
+                <p>#Product #Descrip #tion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of main today wrap -->
+      </section>
+
+      <section id="main_review" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+        <div class="wrap">
+          <h2 class="title">Best Review</h2>
+          <hr>
+          <div class="review_slide">
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+            <div><img src="img/ex.jpg" alt=""></div>
+          </div>
         </div>
       </section>
+
+
+
     </main>
   </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/custom.js"></script>
 
   <script>
-$('.slider_wrapper').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+// $('.review_slide').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   arrows : false,
+//   fade: true
+// });
+
+
+$('.review_slide').slick({
+  centerMode: true,
+  prevArrow: '<b> < </b>',
+  nextArrow: '<b> > </b>',
+  centerPadding: '60px',
   autoplay: true,
-  autoplaySpeed: 2000,
-  arrows : false,
-  fade: true
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
   </script>
 
