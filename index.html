@@ -46,22 +46,38 @@
                   <div class="sub_wrapper">
                     <ul>
                       <p>피부타입별</p>
-                      <li><a href="#">Category One</a></li>
-                      <li><a href="#">Category Two</a></li>
-                      <li><a href="#">Category Three</a></li>
+                      <hr>
+                      <li><a href="#">지성/복합성</a></li>
+                      <li><a href="#">건성/민감성</a></li>
+                      <li><a href="#">트러블/모공 관리</a></li>
+                      <li><a href="#">미백 관리</a></li>
+                      <li><a href="#">주름 개선</a></li>
                     </ul>
                     <ul>
-                      <p>피부고민별</p>
-                      <li><a href="#">Category One</a></li>
-                      <li><a href="#">Category Two</a></li>
-                      <li><a href="#">Category Three</a></li>
+                      <p>제품타입별</p>
+                      <hr>
+                      <li><a href="#">클렌징</a></li>
+                      <li><a href="#">스킨/토너</a></li>
+                      <li><a href="#">로션/크림</a></li>
+                      <li><a href="#">헤어/바디</a></li>
                     </ul>
                   </div>
                 </div>
               </li>
               <li><a href="#">Review</a></li>
               <li><a href="#">Event</a></li>
-              <li><a href="#">CS Center</a></li>
+              <li>
+                <a href="#">CS Center</a>
+                <div class="sub_list">
+                  <div class="sub_wrapper">
+                    <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">자주 묻는 질문</a></li>
+                      <li><a href="#">1:1 문의</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
         </ul>
@@ -191,7 +207,14 @@
           <h2 class="title">Best Review</h2>
           <hr>
           <div class="review_slide">
-            <div><img src="img/ex.jpg" alt=""></div>
+            <div>
+              <img src="img/ex.jpg" alt="">
+              <div class="review_bottom">
+                <h3>#상품명 BLAH BLAH</h3>
+                <p>김**님의 후기</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+              </div>
+            </div>
             <div><img src="img/ex.jpg" alt=""></div>
             <div><img src="img/ex.jpg" alt=""></div>
             <div><img src="img/ex.jpg" alt=""></div>
@@ -229,7 +252,7 @@ $('.review_slide').slick({
   nextArrow: '<b> > </b>',
   centerPadding: '60px',
   autoplay: true,
-  slidesToShow: 4,
+  slidesToShow: 5,
   responsive: [
     {
       breakpoint: 768,

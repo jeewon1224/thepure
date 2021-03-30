@@ -79,21 +79,33 @@ $(function(){
 
 
 
-
-//   $(document).ready(function(){
-//     $(".main_list>li").mouseover(function(){
-//         $(this).children(".sub_list").stop().slideDown(200);
-//     });
-//     $(".main_list>li").mouseleave(function(){
-//         $(this).children(".sub_list").stop().slideUp(200);
-//     });
-// });
-
-
+//마우스 오버 시 서브 메뉴 열기
+  $(document).ready(function(){
+    $(".main_list>li").mouseover(function(){
+        $(this).children(".sub_list").stop().slideDown(200);
+    });
+    $(".main_list>li").mouseleave(function(){
+        $(this).children(".sub_list").stop().slideUp(200);
+    });
+});
 
 
 
 
+
+
+
+
+var offset = $( '.header_bottom' ).offset();
+  console.log(offset);
+
+  $( window ).scroll( function() {
+    if ( $( document ).scrollTop() > offset.top ) {
+      $( '.header_bottom' ).addClass( 'fixed' );
+    }else {
+      $( '.header_bottom' ).removeClass( 'fixed' );
+    }
+  });
 });
 
 
