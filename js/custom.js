@@ -106,8 +106,53 @@ var offset = $( '.header_bottom' ).offset();
       $( '.header_bottom' ).removeClass( 'fixed' );
     }
   });
+
+
+
+
+  // 모바일 아코디언 메뉴
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i=0; i<acc.length; i++){
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+
+
 });
 
 
+
+
+$(document).ready(function() {
+  $(".accordion").on("click", function() {
+    //alert('abc');
+    $(this).addClass('active');
+
+    /*if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      // $(this).siblings(".panel").slideUp(200);
+      
+    } else {
+     
+      $(".accordion").removeClass("active");
+      $(this).addClass("active");
+      $(".panel").slideDown(200);
+      $(this).siblings(".panel").addClass('on');
+      console.log($this);
+    }*/
+  });
+});
 
 

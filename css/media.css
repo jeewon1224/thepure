@@ -1,0 +1,22 @@
+@media screen and (max-width:1400px){
+  #header .header_top .top_gnb{padding: 5px 10px;}
+  #header .header_bottom .bottom_gnb{padding: 0 10px;}
+}
+
+
+@media screen and (max-width:1024px){
+  .banner_slider .img_box{height: 500px;}
+}
+
+
+@media screen and (max-width:768px){
+  #header .header_bottom #nav{display: none;}
+  .mobile_nav{display: block;}
+}
+
+
+
+@media screen and (max-width:500px){
+
+}
+
