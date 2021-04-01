@@ -138,7 +138,7 @@ var offset = $( '.header_bottom' ).offset();
 $(document).ready(function() {
   $(".accordion").on("click", function() {
     //alert('abc');
-    $(this).addClass('active');
+    // $(this).addClass('active');
 
     /*if ($(this).hasClass("active")) {
       $(this).removeClass("active");

@@ -12,11 +12,31 @@
 @media screen and (max-width:768px){
   #header .header_bottom #nav{display: none;}
   .mobile_nav{display: block;}
+
+  #main_best .wrap{padding: 60px 10px 30px;}
+  #main_best .best_items{grid-template-columns: repeat(2, 1fr);}
+  #main_today .wrap{padding: 40px 10px 30px;}
+  #main_today .today_items{grid-template-columns: repeat(2, 1fr);}
+  #main_review .wrap{padding: 40px 10px 30px;}
 }
 
 
 
 @media screen and (max-width:500px){
+  #header .header_bottom .bottom_gnb .logo>a{width: 150px;}
+  .mobile_menu_box{width: 250px;}
+
+  #main_best hr, #main_today hr, #main_review hr{margin: 0 0 30px 0;}
+  #main_best .title, #main_today .title, #main_review .title{font-size: 25px; text-align: center;}
+  #main_best .best_items .best_item .best_desc h3, #main_today .today_items .today_item .today_desc h3{font-size: 16px;}
+  #main_best .best_items .best_item .best_desc p, #main_today .today_items .today_item .today_desc p {
+    font-size: 12px;
+}
+.slick-slide {margin: 0 5px;
+  border: 1px solid #111;}
+.review_bottom h3{font-size: 14px;}
+.review_bottom p{font-size: 12px;}
+.review_bottom span{font-size: 10px;}
 
 }
 

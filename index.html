@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
@@ -87,25 +87,31 @@
               <span></span>
             </label>
             <div class="mobile_menu_box">
+              <div class="mobile_top">
+                <ul class="member">
+                  <li class="login"><a href="#">로그인</a></li>
+                  <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+              </div>
               <div>
                 <button class="accordion"><a href="#">Brand</a></button>
                 
                 <button class="accordion acc_icon">Product</button>
-                <ul class="panel">
-                  <li>피부타입별
-                    <a href="#">지성/복합성</a>
-                    <a href="#">건성/민감성</a>
-                    <a href="#">트러블/모공 관리</a>
-                    <a href="#">미백 관리</a>
-                    <a href="#">주름 개선</a>
-                  </li>
-                  <li>제품타입별
-                    <a href="#">클렌징</a>
-                    <a href="#">스킨/토너</a>
-                    <a href="#">로션/크림</a>
-                    <a href="#">헤어/바디</a>
-                  </li>
-                </ul>
+                <div class="panel">
+                  <ul>피부타입별
+                    <li><a href="#">지성/복합성</a></li>
+                    <li><a href="#">건성/민감성</a></li>
+                    <li><a href="#">트러블/모공 관리</a></li>
+                    <li><a href="#">미백 관리</a></li>
+                    <li><a href="#">주름 개선</a></li>
+                  </ul>
+                  <ul>제품타입별
+                    <li><a href="#">클렌징</a></li>
+                    <li><a href="#">스킨/토너</a></li>
+                    <li><a href="#">로션/크림</a></li>
+                    <li><a href="#">헤어/바디</a></li>
+                  </ul>
+                </div>
 
                 <button class="accordion"><a href="#">Review</a></button>
                 <!-- <li class="panel">
@@ -118,14 +124,21 @@
                 </li> -->
 
                 <button class="accordion acc_icon">CS Center</button>
-                <ul class="panel">
-                  <li>피부타입별
-                    <a href="#">공지사항</a>
-                    <a href="#">자주 묻는 질문</a>
-                    <a href="#">1:1 문의</a>
-                  </li>
-                </ul>
+                <div class="panel">
+                  <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                  </ul>
+                </div>
+                <!-- end of panel -->
               </div>
+
+              <ul class="sns">
+                <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-kakao-talk"></i></a></li>
+              </ul>
             </div>
           </nav>
         </div>
@@ -174,7 +187,7 @@
           </div>
         </div> -->
       </section>
-      <section id="main_best" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+      <section id="main_best" data-aos="fade-up" data-aos-duration="800">
         <div class="wrap">
           <h2 class="title">Best Items</h2>
           <hr>
@@ -212,7 +225,7 @@
         <!-- end of main best wrap -->
       </section>
 
-      <section id="main_today" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+      <section id="main_today" data-aos="fade-up" data-aos-duration="800">
         <div class="wrap">
           <h2 class="title">Today's Choice</h2>
           <hr>
@@ -250,7 +263,7 @@
         <!-- end of main today wrap -->
       </section>
 
-      <section id="main_review" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
+      <section id="main_review" data-aos="fade-up" data-aos-duration="800">
         <div class="wrap">
           <h2 class="title">Best Review</h2>
           <hr>
@@ -269,6 +282,20 @@
             <div><img src="img/ex.jpg" alt=""></div>
             <div><img src="img/ex.jpg" alt=""></div>
             <div><img src="img/ex.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main_aside">
+        <div class="wrap">
+          <div class="left_box" data-aos="fade-right" data-aos-duration="2000">
+            <div class="promotion">
+              <h3>우리는 자연으로부터 얻은<br>착한 성분의 힘을 믿습니다.</h3>
+            </div>
+          </div>
+          <div class="right_box" data-aos="fade-left" data-aos-duration="2000">
+            <div class="sample_banner"></div>
+            <div class="cs_banner"></div>
           </div>
         </div>
       </section>
@@ -317,7 +344,7 @@ $('.review_slide').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 2
       }
     }
   ]
