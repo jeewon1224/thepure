@@ -1,11 +1,28 @@
 @media screen and (max-width:1400px){
   #header .header_top .top_gnb{padding: 5px 10px;}
   #header .header_bottom .bottom_gnb{padding: 0 10px;}
+
+
+  #main_best .wrap{padding:60px 10px 30px;}
+  #main_today .wrap{padding: 40px 10px 30px;}
+  #main_review .wrap{padding: 40px 10px 30px;}
+  #main_aside .wrap{padding: 80px 10px 30px;}
 }
 
 
 @media screen and (max-width:1024px){
+  /* 메인 배너 슬라이드 섹션 */
   .banner_slider .img_box{height: 500px;}
+
+  /* 메인 aside 섹션 */
+  #main_aside .left_box{width: calc(50% - 5px);}
+  #main_aside .left_box .promotion{padding: 20px 0 0 20px;}
+  #main_aside .left_box .promotion a span{font-size: 25px;}
+  #main_aside .right_box{flex-direction: column; width: calc(50% - 5px);}
+  #main_aside .right_box .sample_banner,
+  #main_aside .right_box .cs_banner{width: 100%; height: calc(50% - 5px)}
+  #main_aside .right_box .sample_banner a span,
+  #main_aside .right_box .cs_banner a span{font-size: 20px;}
 }
 
 
@@ -13,11 +30,27 @@
   #header .header_bottom #nav{display: none;}
   .mobile_nav{display: block;}
 
+  /* 메인 베스트 상품 섹션 */
   #main_best .wrap{padding: 60px 10px 30px;}
   #main_best .best_items{grid-template-columns: repeat(2, 1fr);}
+
+  /* 메인 추천 상품 섹션 */
   #main_today .wrap{padding: 40px 10px 30px;}
   #main_today .today_items{grid-template-columns: repeat(2, 1fr);}
+
+  /* 메인 리뷰 섹션 */
   #main_review .wrap{padding: 40px 10px 30px;}
+
+  /* 메인 aside 섹션 */
+  #main_aside .wrap{flex-direction: column;}
+  #main_aside .left_box{width: 100%; height: 250px;}
+  #main_aside .right_box{width: 100%; height: 200px; flex-direction: row; margin-top: 10px;}
+  /* #main_aside .left_box .promotion a span{font-size: 20px;} */
+  #main_aside .right_box .sample_banner, #main_aside .right_box .cs_banner{width: calc(50% - 5px); height: 100%;}
+
+
+
+
 }
 
 
@@ -32,11 +65,19 @@
   #main_best .best_items .best_item .best_desc p, #main_today .today_items .today_item .today_desc p {
     font-size: 12px;
 }
-.slick-slide {margin: 0 5px;
-  border: 1px solid #111;}
+.slick-slide {margin: 0 5px; border: 1px solid #111;}
 .review_bottom h3{font-size: 14px;}
 .review_bottom p{font-size: 12px;}
 .review_bottom span{font-size: 10px;}
 
+
+
+
+#main_aside .wrap{padding: 40px 10px 30px;}
+#main_aside .left_box, #main_aside .right_box{height: 200px;}
+#main_aside .left_box .promotion a span {font-size: 20px;}
 }
+
+
+
 

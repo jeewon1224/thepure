@@ -6,7 +6,7 @@
 ol, ul{list-style: none;}
 body{font-size: 14px; font-family: 'NanumSquare', sans-serif;}
 .clear:after{clear: both; display: block; content: '';}
-.center{width: 100%; height: auto; max-width: 1140px; margin: auto;}
+.center{width: 100%; height: auto; max-width: 1400px; margin: auto;}
 a{text-decoration: none; color:#111;}
 img{display: block;}
 button, input, textarea{outline: 0; font-family: 'Open Sans'; -webkit-appearance:none; border-radius: 0;}
@@ -20,11 +20,11 @@ input:focus, textarea:focus{background:#f8f8f8;}
 /* 헤더 영역 */
 #header{width: 100%; height: auto;}
 #header .header_top{width: 100%; height: auto; background: #111; padding: 10px 0;}
-#header .header_top .top_gnb{width: 100%; height: auto; display: flex; max-width: 1280px; margin: auto; justify-content: flex-end; padding: 5px 0;}
+#header .header_top .top_gnb{width: 100%; height: auto; display: flex; max-width: 1400px; margin: auto; justify-content: flex-end; padding: 5px 0;}
 #header .header_top .top_gnb li{padding-left: 10px;}
 #header .header_top .top_gnb li>a{color: #fff; font-weight: 500;}
 #header .header_bottom{width: 100%; height: auto; background: #fff;}
-#header .header_bottom .bottom_gnb{display: flex; align-items: center; width: 100%; max-width: 1280px; margin: auto; _padding: 5px 0; position: relative}
+#header .header_bottom .bottom_gnb{display: flex; align-items: center; width: 100%; max-width: 1400px; margin: auto; _padding: 5px 0; position: relative}
 #header .header_bottom .bottom_gnb .logo{width: fit-content; display: flex;}
 #header .header_bottom .bottom_gnb .logo>a{display: inline-block; width: 200px; padding: 3px;}
 #header .header_bottom .bottom_gnb .logo>a>img{width: 100%;}
@@ -188,8 +188,8 @@ input:focus, textarea:focus{background:#f8f8f8;}
 
 /* 메인 베스트 상품 섹션 */
 #main_best{width: 100%; height: auto;}
-#main_best .wrap{width: 100%; height: auto; max-width: 1280px; margin: auto; padding: 60px 0 30px;}
-#main_best .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 30px;}
+#main_best .wrap{width: 100%; height: auto; max-width: 1400px; margin: auto; padding: 60px 0 30px;}
+#main_best .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 35px;}
 #main_best hr{margin: 10px 0 30px 0;}
 #main_best .best_items{display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: auto 1fr}
 #main_best .best_items .best_item{display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 5px;}
@@ -201,8 +201,8 @@ input:focus, textarea:focus{background:#f8f8f8;}
 
 /* 메인 베스트 상품 섹션 */
 #main_today{width: 100%; height: auto; background-color: #eee;}
-#main_today .wrap{width: 100%; height: auto; max-width: 1280px; margin: auto; padding: 40px 0 30px;}
-#main_today .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 30px;}
+#main_today .wrap{width: 100%; height: auto; max-width: 1400px; margin: auto; padding: 40px 0 30px;}
+#main_today .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 35px;}
 #main_today hr{margin: 10px 0 30px 0;}
 #main_today .today_items{display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: auto 1fr}
 #main_today .today_items .today_item{display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 5px;}
@@ -215,20 +215,20 @@ input:focus, textarea:focus{background:#f8f8f8;}
 
 /* 메인 리뷰 섹션 */
 #main_review{width: 100%; height: auto;}
-#main_review .wrap{width: 100%; height: auto; max-width: 1280px; margin: auto; padding: 40px 0 30px;}
-#main_review .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 30px;}
+#main_review .wrap{width: 100%; height: auto; max-width: 1400px; margin: auto; padding: 40px 0 30px;}
+#main_review .title{width: 100%; font-family: 'Poppins', sans-serif; font-size: 35px;}
 #main_review hr{margin: 10px 0 30px 0;}
 
 #main_review .review_slide{width: 100%; position: relative;}
 #main_review .review_slide>div{margin: 5px;}
 #main_review .review_slide>div>img{width: 100%;}
-.slick-slide{_padding: 10px; margin: 0 10px;}
+.slick-slide{margin: 0 10px; border: 1px solid #999;}
 .slick-slide img{width: 100%;}
 #main_review .review_slide b.slick-arrow{position: absolute; font-size: 20px; bottom: 0; right: 0; z-index: 2; background-color: #fff;}
 #main_review .review_slide b.slick-arrow:first-child{right: 15px;}
 
 
-.review_bottom{text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-top: 10px;}
+.review_bottom{text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 10px;}
 
 
 
@@ -236,13 +236,23 @@ input:focus, textarea:focus{background:#f8f8f8;}
 
 /* 메인 어사이드 섹션 */
 #main_aside{width: 100%; height: auto;}
-#main_aside .wrap{display: flex; flex-direction: row; justify-content: space-between; width: 100%;height:auto; max-width: 1280px; margin: auto; padding: 40px 0 30px;}
-#main_aside .left_box{width: calc(50% - 5px); height: 400px; background-color: cadetblue;}
-#main_aside .left_box .promotion{width: 100%; height: 100%; background: url(../img/aside_01.gif); background-repeat: no-repeat; background-size: cover; background-position: center; }
-#main_aside .left_box .promotion h3{color: #fff; font-size: 30px; font-weight: 800;}
+#main_aside .wrap{display: flex; flex-direction: row; justify-content: space-between; width: 100%;height:auto; max-width: 1400px; margin: auto; padding: 80px 0 30px;}
+#main_aside .left_box{width: calc(50% - 10px); height: 400px; background-color: cadetblue;}
+#main_aside .left_box .promotion{width: 100%; height: 100%; background: url(../img/aside_01.gif); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 20px 0 0 20px;}
+#main_aside .left_box .promotion a{display: inline-block; width: 100%; height: 100%;} 
+#main_aside .left_box .promotion a span{display:inline-block; color: #fff; font-size: 35px; font-weight: 800;  line-height: 1.5; letter-spacing: 3px;}
 
 
-#main_aside .right_box{display: flex; justify-content: space-between; width: calc(50% - 5px); height: 400px; background-color: cornflowerblue;}
-#main_aside .right_box .sample_banner{width: calc(50% - 5px); height: 100%; background-color: bisque; background: url(../img/샘플.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
-#main_aside .right_box .cs_banner{width: calc(50% - 5px); height: 100%; background-color: blueviolet;}
+#main_aside .right_box{display: flex; justify-content: space-between; width: calc(50% - 10px); height: 400px;}
+#main_aside .right_box .sample_banner{width: calc(50% - 5px); height: 100%; background: url(../img/aside_sample2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 20px;}
+#main_aside .right_box .sample_banner a{display: inline-block; width: 100%; height: 100%;}
+#main_aside .right_box .sample_banner a span{display:inline-block; color: #fff; font-size: 25px; font-weight: 800; line-height: 1.5; letter-spacing: 3px;}
+#main_aside .right_box .sample_banner a .sample_btn{display: block; border: 1px solid #fff; background: transparent; color: #fff; padding: 5px 50px; margin-top: 10px; font-size: 15px; transition: all .4s; cursor: pointer;}
+#main_aside .right_box .sample_banner a .sample_btn:hover{background: #fff; color: #888;}
+
+#main_aside .right_box .cs_banner{width: calc(50% - 5px); height: 100%; background: url(../img/aside_cscenter.jpg); background-size: cover; background-repeat: no-repeat; background-position: left;  padding: 20px;}
+#main_aside .right_box .cs_banner a{width: 100%; height: 100%; display: inline-block;}
+#main_aside .right_box .cs_banner a span{display:inline-block; color: #fff; font-size: 25px; font-weight: 800; line-height: 1.5; letter-spacing: 3px;}
+#main_aside .right_box .cs_banner a .cs_btn{display: block; border: 1px solid #fff; background: transparent; color: #fff; padding: 5px 50px;  margin-top: 10px; font-size: 15px; transition: all .4s; cursor: pointer;}
+#main_aside .right_box .cs_banner a .cs_btn:hover{background: #fff; color: #888;}
 
